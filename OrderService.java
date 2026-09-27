@@ -5,7 +5,7 @@ import java.util.List;
 
 public class OrderService {
 
-    // Create order
+   
     public void createOrder(Order order) {
         String sql = "INSERT INTO orders (id, product, quantity, status) VALUES (?, ?, ?, ?)";
         try (Connection conn = DBUtil.getConnection();

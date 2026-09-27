@@ -12,10 +12,10 @@ public class SimpleHttpServer {
         // Create server on port 8080
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
-        // Define context (endpoint)
+        
         server.createContext("/orders", new OrderHandler());
 
-        // Start server
+        
         server.setExecutor(null); // default executor
         server.start();
         System.out.println("Server started on port 8080...");
